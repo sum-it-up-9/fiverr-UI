@@ -19,7 +19,7 @@ mongoose.set("strictQuery", true);
 
 app.use(cors(
     {
-        origin: ["https://https://fiverr-frontend-nine.vercel.app"],
+        origin: ["https://fiverr-frontend-nine.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
