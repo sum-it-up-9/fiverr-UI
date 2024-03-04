@@ -19,7 +19,7 @@ mongoose.set("strictQuery", true);
 
 app.use(cors(
   {
-      origin: ["https://deploy-mern-frontend.vercel.app"],
+      origin: ["fiverr-frontend-nine.vercel.app"],
       credentials: true
   }
 ));
