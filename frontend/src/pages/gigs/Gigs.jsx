@@ -84,7 +84,7 @@ const Gigs = () => {
             : data.map((gig) => <GigCard key={gig._id} item={gig} />)}
         </div>
         {
-          data.length===0 && (<>
+          data && data.length===0 && (<>
             <h1>No gigs Found</h1>
           </>)
         }
