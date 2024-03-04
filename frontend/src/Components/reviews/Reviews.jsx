@@ -3,7 +3,7 @@ import React from "react";
 import Review from "../review/Review";
 import newRequest from "../../utils/newRequest";
 import "./Reviews.scss";
-const Review = ({  gigId  }) => {
+const Reviews = ({  gigId  }) => {
   const queryClient = useQueryClient()
   const { isLoading, error, data } = useQuery({
     queryKey: ["reviews"],
@@ -55,4 +55,4 @@ const Review = ({  gigId  }) => {
   );
 };
 
-export default Review;
+export default Reviews;
