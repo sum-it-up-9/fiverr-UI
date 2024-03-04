@@ -1,12 +1,14 @@
 {
-    "version":2,
-    "builds": [
-      { "src": "*.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-        {
-          "src": "/api/(.*)",
-          "dest": "/"
-        }
-    ]
-  }
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/",
+      "methods": ["POST"],
+      "headers": {
+        "Access-Control-Allow-Origin": "https://fiverr-frontend-nine.vercel.app",
+        "Access-Control-Allow-Methods": "POST",
+        "Access-Control-Allow-Headers": "Content-Type"
+      }
+    }
+  ]
+}
